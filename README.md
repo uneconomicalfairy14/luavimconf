@@ -12,12 +12,22 @@ minimalistic neovim config
 
 ## Installation
 
-```
-git clone https://github.com/uneconomicalfairy14/luavimconf.git ~/.config/nvim 
-```
+
 ```
 sudo pacman -S python3-pip neovim fd ripgrep
 ```
+```
+git clone https://github.com/uneconomicalfairy14/luavimconf.git ~/.config/nvim
+mv ~/.config/luavimconf ~/.config/nvim
+```
+```
+npm install -g neovim
+pip install pynvim
+```
+- start nvim 
+- let it complete packersync
+- close it
+- reopen again
 
 ## LSP Support
 
@@ -25,8 +35,17 @@ works out of the box
 ```
 nvim +LSPInstall <the language server>
 ```
+## Treesitter parsers
+
+run these commands in the nvim commandline
+
+```
+TSInstall <parser language>
+```
 
 ## Plugins used
+<details><summary><b> PLUGINS(click to expand)</b></summary>
+
  - use "wbthomason/packer.nvim" -- Have packer manage itself
  - use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
  - use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
@@ -73,8 +92,12 @@ nvim +LSPInstall <the language server>
  - use "JoosepAlviste/nvim-ts-context-commentstring"
 
  - use "lewis6991/gitsigns.nvim"
+ 
+ </details>
 
 # ScreenShots
+
+<details><summary><b>Screenshots(click to expand)</b></summary>
 
 - <img src="https://github.com/uneconomicalfairy14/luavimconf/blob/master/assets/Screenshot%20(6).png?raw=false"/>
 - <img src="https://github.com/uneconomicalfairy14/luavimconf/blob/master/assets/Screenshot%20(7).png?raw=false"/>
@@ -83,4 +106,4 @@ nvim +LSPInstall <the language server>
 - <img src="https://github.com/uneconomicalfairy14/luavimconf/blob/master/assets/Screenshot%20(10).png?raw=false"/>
 - <img src="https://github.com/uneconomicalfairy14/luavimconf/blob/master/assets/Screenshot%20(11).png?raw=false"/>
 
-
+</details>
