@@ -3,15 +3,20 @@
 minimalistic neovim config
 
 ## Requirements
+
+<details><summary><b>requirements(click to expand)</b></summary>
+ 
  - python 3 
  - neovim >=7.0
  - nodejs >=latest-lts
  - fd
  - ripgrep
  - a terminal that supports nerdfonts(preferably alacritty)
+</details>
 
 ## Installation
 
+<details><summary><b>installation instuctions(click to expand)</b></summary>
 
 ```
 sudo pacman -S python3-pip neovim fd ripgrep
@@ -28,23 +33,28 @@ pip install pynvim
 - let it complete packersync
 - close it
 - reopen again
+</details>
 
-## LSP Support
+## LSP and TS Support
 
-works out of the box
+<details><summary><b>LSP & TS(click to expand)</b></summary>
+
+
+ run these commands in the nvim commandline
+
+- LSP
 ```
-nvim +LSPInstall <the language server>
+LSPInstall <the language server>
 ```
-## Treesitter parsers
-
-run these commands in the nvim commandline
-
+- Treesitter parsers
 ```
 TSInstall <parser language>
 ```
+ </details>
 
-## Plugins used
-<details><summary><b> PLUGINS(click to expand)</b></summary>
+ ## Plugins used
+
+ <details><summary><b> PLUGINS(click to expand)</b></summary>
 
  - use "wbthomason/packer.nvim" -- Have packer manage itself
  - use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
